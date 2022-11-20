@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	{% load static %}
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/slider-dots.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}"><!--подключаем файл CSS библиотеки Animate-->
+<link href="{% static 'images/logo.png' %}" rel="shortcut icon" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> ОАО Ошмянский мясокомбинат </title>
+</head>
+
+<body>
+<header class="head-0">
+	<div class="main-top">
+		<div class="header-t clearfix">
+
+			<nav>
+				<ul class="menu">
+					<li><a href="{% url 'main' %}">Главная</a></li>
+					
+					<li><a href="{% url 'products' %}">Продукция</a></li>
+					<li><a href="{% url 'timetable' 'Ошмяны' %}">Режим работы</a></li>
+					<li><a href="{% url 'list_news' %}">Новости</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-----      СЛАЙДЕР1         ----->
+<div class="my-slider ">
+	<ul>
+		<li>
+			<div class="slider1" >
+					
+			<a href="#"><img src="{% static 'images/slide1.jpg' %}" alt=""></a>
+			</div>
+		</li>
+      	<li><a href="#"><img src="{% static 'images/slide2.jpg' %}" alt=""></a></li>
+		<li><a href="#"><img src="{% static 'images/slide3.jpg' %}" alt=""></a></li>
+		<li><a href="#"><img src="{% static 'images/slide4.jpg' %}" alt=""></a></li>
+	</ul>
+</div>
+		<div class="main-middle3-all">
+	<h3>Классика вкуса</h3>
+		<hr>
+	<h2>Само совершенство</h2>
+	<div class="main-middle3 main-top clearfix">
+		<article>
+			<a href="#">
+				<img src="{% static 'images/Saltison.png' %}" alt="" class="wow fadeInLeft" data-wow-delay="0.5s">
+			</a>
+			<h2>
+				<a href="#">Натуральная продукция</a>
+			</h2>
+			<p> 
+				<span class="golden-text">Без применения консервантов и вредных упаковочных материалов</span> 
+			</p>
+		</article>
+		<article>
+			<a href="#">
+				<img src="{% static 'images/stejk-ribaj.png' %}" alt="" class="wow fadeInLeft" data-wow-delay="1.5s">
+			</a>
+			<h2>
+				<a href="#">Вкус</a>
+			</h2>
+			<p>
+				<span class="golden-text">Используются исключительно натуральнные продукты и специи</span> <br>
+			</p>
+		</article>
+		<article>
+			<a href="#">
+				<img src="{% static 'images/cost.jpg' %}" alt="" class="wow fadeInLeft" data-wow-delay="2s">
+			</a>
+			<h2>
+				<a href="#">Цена и качество</a>
+			</h2>
+			<p>
+				<span class="golden-text"> Оптимальное соотношение цены и качества</span> <br>
+				</p>
+		</article>
+	</div>
+</div>	
+<!-----      СМАРТФОНЫ - ТОВАРЫ         ----->
+<section class="main-middle4-section main-top wow fadeInLeft">
+	<h3 class ="animated bounce"></h3><h3>З ПАВАГАЙ ДА ЯКАСЦi </h3>
+			<hr>
+			<h2 class="three">У НАС ЕСТЬ СТАРЫЙ ГОРОД</h2>
+	<div class="middle4-article clearfix">
+		<article>
+			<img src="{% static 'images/oldcity1.jpg' %}" alt="" class="swaying">
+			<div class="middle4-material">
+				<div class="level-0">
+					<h2>
+				<a href="#">Неземное наслождение</a>
+					</h2>
+					<p>
+					<span class="golden-text">Жара.  В кафе «Старый город» вас ждут сорта тёмного пива с вкусовыми нотками карамели и светлое пиво с лёгкой горечью хмеля.<br> 
+					</span>
+					</p>
+			</div>
+	</div>
+		</article>
+		<article>
+			<img src="{% static 'images/oldcity2.jpg' %}" alt="" class="swaying">
+			<div class="middle4-material">
+				<div class="level-0">
+				<h2><a href="#">Обеденное меню</a></h2>
+				<p><span class="golden-text">
+					Горячий, сытный обед – это лучший вариант приёма пищи в середине дня, который ну никак нельзя пропускать
+					</span>
+				</p>
+				</div>
+				
+			</div>
+		</article>
+		<article>
+			<img src="{% static 'images/oldcity3.jpg' %}" alt="" class="swaying">
+			<div class="middle4-material">
+				<div class="level-0">
+				<h2><a href="#">У НАС ЛУЧШИЙ В МИРЕ ПОВАР</a></h2>
+				<p>
+					<span class="golden-text">Вы хотите вкусно пообедать, а мы знаем, как вас порадовать! Комплексные обеды в кафе «Старый город»
+					</span>
+				</p>
+			</div>				
+	</div>
+		</article>
+		<article>
+			<img src="{% static 'images/oldcity4.jpg' %}" alt="" class="swaying">
+			<div class="middle4-material">
+				<div class="level-0">
+					<h2><a href="#">ВЕЧЕРИНКИ</a></h2>
+				
+				<p><span class="golden-text"> Проведение вечеринок наш "канек"
+					</span>
+				</p>
+				</div>
+				
+			</div>
+		</article>
+	</div>
+</section>
+<!-----      /СМАРТФОНЫ - ТОВАРЫ         ----->
+<!-----      VIDEO        ----->
+	<section class="video-assus">
+	<div class="video-center main-top">
+		<h2>Вкусно Качественно Полезно</h2>
+		<!-----<img src="{% static 'images/video-play.png' %}" alt="" id="at">----->
+		<video> <source src="{%static 'images/OMK(2).mp4'%}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> </video>
+		<p>Продукция ОАО «Ошмянский мясокомбинат» выпускается и позиционируется на рынке под брендом «З павагай да якасцi».
+			
+		</p>		
+	</div>
+	</section>	 
+<!-----      /VIDEO         ----->
+<!-----     КАЛI ЛАСКА!  ----->
+<div class="drivers-100">
+	<div class="drivers-1166 main-top  clearfix">
+		 <h3>КАЛI ЛАСКА!  </h3>
+		 <p><a href="#" class="order-naw">ЗАКАЗАТЬ СЕЙЧАС</a></p>
+	</div>
+</div>
+<!-----      / КАЛI ЛАСКА!        ----->
+	<!-----      КОНТАКТЫ      ----->
+	<section class="contakt-assus">
+<!-----<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231263.2257730097!2d121.4231642512933!3d25.08534034373635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac6b61dbbd8b%3A0xbcd1baad5c06a482!2z0KLQsNC50LHRjdC5LCDQotCw0LnQstCw0L3RjA!5e0!3m2!1sru!2sru!4v1479069755298" frameborder="0" style="border:0"  allowfullscreen  width="100%" height="570px">
+			</iframe>	---->
+		
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.757319595703!2d25.945937116175855!3d54.431917880220844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dc35dd56769c5d%3A0xa504b55f577269b!2z0J7RiNC80Y_QvdGB0LrQuNC5INC80Y_RgdC-0LrQvtC80LHQuNC90LDRgiDQntCQ0J4!5e0!3m2!1sru!2sby!4v1654788491101!5m2!1sru!2sby" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	<article class="contakt-form wow flipInX" data-wow-offset="200" data-wow-interation="2">	
+	<h2>ЗАКАЗАТЬ</h2><a name="zak"></a>
+		<div class="foot-text">
+			<form>
+				<input type="text" class="foot-email" placeholder="ВАШЕ ИМЯ">
+				<input type="email" class="foot-email" placeholder="ВАШ email">
+				<textarea class="foot-textarea" placeholder="ВАШ ТЕКСТ">
+					</textarea>
+				<input type="submit" class="foot-submit" value="ЗАКАЗАТЬ">
+			</form>
+		</div>
+	</article>
+	</section>
+	
+	<!-----      / КОНТАКТЫ       ----->
+	
+<!-----      Футер         ----->
+<footer class="foot">
+	<div class="middle4-article main-top clearfix">
+		Copyright  2018 <a href="http://24navo.com">24navo.com</a>
+	
+		</div>
+		
+	
+
+</footer>
+<!-----      /Футер         ----->
+
+<script src="{% static 'js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'js/slider.js' %}"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+			nav:true,
+			autoplay:true,
+			arrows:false,
+			delay:3000,
+			speed:750,
+			animation:'horizontal',/*'horizontal' 'vertical' */
+			});
+		});
+	</script>
+	<!-----      Выравнивание колонок         ----->	
+	<script>
+	function setEqualHeight(columns) { 
+		var heightcolumn = 0; 
+		columns.each( function() { 
+			currentHeight = $(this).height(); 
+			if(currentHeight > heightcolumn) { heightcolumn = currentHeight; } } ); 
+			columns.height(heightcolumn); 
+		} 
+		
+		$(document).ready(function() { setEqualHeight($(".level-0")); });
+</script>
+<!-----      /Выравнивание колонок       .level-0  ----->
+<!----	resolution.img ---->
+	<script src="{% static 'js/resolution-img.js' %}"></script>
+
+  <script>
+  $(function(){
+    $('.data-img').dataImg({
+      sml: 350,
+      med: 700,
+      lrg: 1450,
+      resize: true,
+      bgImg: true
+    });
+  });
+  </script>
+<!----/	resolution.img ---->
+	<!---- WOW.min.js ----->
+	<script src="{% static 'js/wow.min.js' %}"></script>
+	<script>		
+	new WOW().init();
+	</script>
+	<!----/ WOW.min.js ----->
+</body>
+</html>
